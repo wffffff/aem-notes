@@ -163,7 +163,7 @@
 </selectfield>
 ```
 
-[datasource example]: examples/tags
+[datasource example](examples/tags)
 
 ## RichText
 
