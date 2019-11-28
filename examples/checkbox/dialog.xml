@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title=""
+          extraClientlibs="[dialog.checkbox]"
+          sling:resourceType="cq/gui/components/authoring/dialog" >
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <panel
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title=""
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            class="cq-dialog-checkbox-showhide"
+                            cq-dialog-checkbox-showhide-target=".container-option-enable-target"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <general
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <carousel-masthead
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            uncheckedValue="false"
+                                            value="{Boolean}true"
+                                            fieldDescription="checked will show the second panel"
+                                            fieldLabel=""
+                                            name="./"
+                                            text=""/>
+                                </items>
+                            </general>
+                            <defalutShowContainer
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    class="hidden container-option-enable-target">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title=""
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <item1
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription=""
+                                                    fieldLabel=""
+                                                    name="./item1"/>
+                                        </items>
+                                    </item1>
+                                </items>
+                            </defalutShowContainer>
+                            <defalutHideContainer
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    class="hidden container-option-enable-target-false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldDescription="item1"
+                                            fieldLabel="item1">
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./item1">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <img
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription=""
+                                                                fieldLabel=""
+                                                                name="img"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </item1>
+                                </items>
+                            </defalutHideContainer>
+                        </items>
+                    </column>
+                </items>
+            </panel>
+        </items>
+    </content>
+</jcr:root>
